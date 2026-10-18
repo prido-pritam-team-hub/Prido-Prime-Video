@@ -395,38 +395,38 @@
   <script>
     // =========================================================================
     // 🚩🚩🚩 YOUR ABOUT US LINK GOES HERE - PASTE YOUR URL BELOW 🚩🚩🚩
-    // =========================================================================
-    const ABOUT_US_LINK = "https://prido-pritam-team-hub.github.io/Prido-Help/"; 
-    // =========================================================================
+   // =========================================================================
+const ABOUT_US_LINK = "https://prido-pritam-team-hub.github.io/Prido-Help/"; 
+// =========================================================================
 
-    function openAboutUs() {
-      if (ABOUT_US_LINK && ABOUT_US_LINK !== "#" && ABOUT_US_LINK !== "https://prido-pritam-team-hub.github.io/Prido-Help/") {
-        window.open(ABOUT_US_LINK, '_blank');
-      } else {
-        openModal('About Us', `
-          <div class="space-y-4 text-sm leading-6">
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-2xl btn-primary flex items-center justify-center text-xl font-bold">
-                <i class="fa-solid fa-circle-info"></i>
-              </div>
-              <div>
-                <h3 class="font-bold text-lg text-white">PRIDO PRIME VIDEO</h3>
-                <p class="text-xs text-sky-400">Created by Pritam Kumar Mandal</p>
-              </div>
-            </div>
-            <p class="muted">
-              Welcome to PRIDO PRIME VIDEO! A modern video streaming and community interaction platform built for creators and viewers.
-            </p>
-            <div class="p-3 bg-slate-900/80 border border-sky-500/30 rounded-xl">
-              <p class="text-xs font-semibold text-sky-300">💡 Custom Link Configuration:</p>
-              <p class="text-xs muted mt-1">
-                To redirect directly to your personal About page, replace <code class="text-pink-300 font-mono">ABOUT_US_LINK</code> in the code with your webpage link!
-              </p>
-            </div>
+function openAboutUs() {
+  if (ABOUT_US_LINK && ABOUT_US_LINK !== "#" && ABOUT_US_LINK !== "https://example.com/about-us") {
+    window.open(ABOUT_US_LINK, '_blank');
+  } else {
+    openModal('About Us', `
+      <div class="space-y-4 text-sm leading-6">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl btn-primary flex items-center justify-center text-xl font-bold">
+            <i class="fa-solid fa-circle-info"></i>
           </div>
-        `);
-      }
-    }
+          <div>
+            <h3 class="font-bold text-lg text-white">PRIDO PRIME VIDEO</h3>
+            <p class="text-xs text-sky-400">Created by Pritam Kumar Mandal</p>
+          </div>
+        </div>
+        <p class="muted">
+          Welcome to PRIDO PRIME VIDEO! A modern video streaming and community interaction platform built for creators and viewers.
+        </p>
+        <div class="p-3 bg-slate-900/80 border border-sky-500/30 rounded-xl">
+          <p class="text-xs font-semibold text-sky-300">💡 Custom Link Configuration:</p>
+          <p class="text-xs muted mt-1">
+            To redirect directly to your personal About page, replace <code class="text-pink-300 font-mono">https://prido-pritam-team-hub.github.io/Prido-Help/</code> in the code with your webpage link!
+          </p>
+        </div>
+      </div>
+    `);
+  }
+}
 
     // Firebase Configuration
     const firebaseConfig = {
